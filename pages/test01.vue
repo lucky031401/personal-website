@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Home page</h1>
+    <h1>test01</h1>
     <NuxtLink to="/test01">
       About (internal link that belongs to the Nuxt App)
     </NuxtLink>
