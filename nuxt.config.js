@@ -34,8 +34,24 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    
+  ],
+  modules: [
+    '@nuxtjs/markdownit'
+    
   ],
 
+  // [optional] markdownit options
+  // See https://github.com/markdown-it/markdown-it
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    use: [
+      'markdown-it-div',
+      'markdown-it-attrs'
+    ]
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extend(config) {

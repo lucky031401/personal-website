@@ -9,10 +9,20 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@adapttive/vue-markdown": "^4.0.1",
+    "@nuxtjs/markdownit": "^2.0.0",
+    "babel-runtime": "^6.26.0",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.4",
+    "markdown-it-vue": "^1.1.6",
+    "nuxt": "^2.13.3",
+    "vue-markdown": "^2.1.2",
     "vue.js": "^0.3.2"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^12.0.3",
+    "@types/vue-markdown": "^2.2.1",
+    "markdown-it": "^6.1.1"
   }
 }

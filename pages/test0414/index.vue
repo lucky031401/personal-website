@@ -12,18 +12,21 @@
     <div v-bind:style="styleObject">8.style object</div>
     <div v-bind:style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }">9.Multiple Values</div>
     <div v-bind:style="[baseStyles, overridingStyles]">10.array value</div>
+    <button v-on:click="location.href='https://www.w3school.com.cn/index.html' ;warn('Form cannot be submitted yet.', $event)">
+      Submit</button>
   </main>
 </template>
 <script>
   import Vue from "vue"
   import TestCom from "@/components/TestCom.vue"
+  import NavBar from "@/components/NavBar.vue"
    Vue.component('mycomponent', {
         template: '<p class="foo bar">Hi</p>'
    })
   export default{
       data(){
         return{
-          isActive:true,
+          //isActive:true,
           hasError:true,
           error:null,
           activeClass: 'active',
@@ -41,7 +44,7 @@
           overridingStyles:{
             fontSize:'20px',
             color:'lightblue',
-            background:'lightyellow'
+            
           },
         }
       },
@@ -53,8 +56,18 @@
             }
           }
       },
-      conponents:{
-        TestCom
+      methods: {
+        warn: function (message, event) {
+          // 现在我们可以访问原生事件对象
+         /* if (event) {
+            event.preventDefault()
+          }
+          alert(message)*/
+        }
+      },
+      components:{
+        TestCom,
+        NavBar
       }
   }
 </script>

@@ -4,6 +4,9 @@
     <NuxtLink to="/test01">
       About (internal link that belongs to the Nuxt App)
     </NuxtLink>
+    <NuxtLink to="/meeting_0730">
+      slot practice
+    </NuxtLink>
     <a href="https://nuxtjs.org">External Link to another page</a>
   </main>
 </template>
